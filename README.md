@@ -70,7 +70,7 @@
 
 🚀 [智能营销助手GPU版](https://openxlab.org.cn/apps/detail/AI-Labs/IntelligentSalesAssistant) 🚀 [智能营销助手CPU版](https://openxlab.org.cn/apps/detail/AI-Labs/IntelligentSalesAssistant-CPU) 🚀  
 
-[2024.11.17] 引入更多模型支持，支持多模型切换，支持更多的智能工具使用
+[2024.11.17] 引入更多模型支持，支持多模型切换，支持更多的智能工具使用  
 [2024.06.15] 完善休闲游戏功能  
 [2024.05.30] 数字人功能  
 [2024.05.15] 语音合成功能、商品咨询功能  
@@ -155,9 +155,12 @@ streamlit run 00🏡智能营销.py
 
 感谢项目中使用的其他开源组件，包括：
 
-* 文本生图片模型：[Stable Diffusion](https://github.com/Stability-AI/stablediffusion)
-* 语音转文本模型：[Whisper](https://github.com/openai/whisper)
-* 文本转语音模型：[MeloTTS](https://github.com/myshell-ai/MeloTTS)
-* 数字人生成模型：[V-Express](https://github.com/tencent-ailab/V-Express)
+* 文本生成：[**InternLM**](https://github.com/InternLM/InternLM)、[GLM-4](https://github.com/THUDM/GLM-4)、[Yi](https://github.com/01-ai/Yi)
+* 文本生图：[Stable Diffusion](https://github.com/Stability-AI/stablediffusion)
+* 语音转文本：[Whisper](https://github.com/openai/whisper)、[FunASR](https://github.com/modelscope/FunASR)
+* 文本转语音：[MeloTTS](https://github.com/myshell-ai/MeloTTS)、[ChatTTS](https://github.com/2noise/ChatTTS)
+* 数字人生成：[Hallo](https://github.com/fudan-generative-vision/hallo)、[Hallo2](https://github.com/fudan-generative-vision/hallo2)、[V-Express](https://github.com/tencent-ailab/V-Express)
+* 虚拟试穿：[AnyDoor](https://github.com/ali-vilab/AnyDoor)、[CatVTON](https://github.com/Zheng-Chong/CatVTON)
+* 视觉识别：[**InternVL**](https://github.com/OpenGVLab/InternVL)、[Qwen2-VL](https://github.com/QwenLM/Qwen2-VL)
 
 ![Star History Chart](https://api.star-history.com/svg?repos=wux-labs/smart-sales-sreamlit&type=Date)
