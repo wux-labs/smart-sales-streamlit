@@ -10,6 +10,7 @@
   - [环境准备](#-环境准备)
     - [基础环境准备](#-基础环境准备)
     - [虚拟环境准备](#-虚拟环境准备)
+    - [环境变量配置](#-环境变量配置)
   - [系统运行](#-系统运行)
 - [🧾 未来规划](#-未来规划)
 - [💕 致谢](#-致谢)
@@ -71,6 +72,7 @@
 🚀 [智能营销助手GPU版](https://openxlab.org.cn/apps/detail/AI-Labs/IntelligentSalesAssistant) 🚀 [智能营销助手CPU版](https://openxlab.org.cn/apps/detail/AI-Labs/IntelligentSalesAssistant-CPU) 🚀  
 
 [2024.11.17] 引入更多模型支持，支持多模型切换，支持更多的智能工具使用  
+[2024.10.01] 实现产品所有功能、模型推理功能在国产显卡天数智芯天垓100上的适配  
 [2024.06.15] 完善休闲游戏功能  
 [2024.05.30] 数字人功能  
 [2024.05.15] 语音合成功能、商品咨询功能  
@@ -117,6 +119,18 @@ studio-conda -t sales -o internlm-base
 conda activate sales
 # 安装必要依赖
 pip install -r requirements.txt
+```
+
+#### 环境变量配置
+
+项目可以调用书生浦语的在线 API ，通过链接 [https://internlm.intern-ai.org.cn/api/tokens](https://internlm.intern-ai.org.cn/api/tokens) 创建一个书生浦语 API 调用的 Token，并配置环境变量 `INTERNLM_TOKEN` ，值为创建的 API Token 值。
+```bash
+export INTERNLM_TOKEN=API Token
+```
+
+项目使用了[和风天气API](https://dev.qweather.com/)，用来查询天气信息。需要注册一个账号、创建项目、并获取API Key，然后配置环境变量 `WEATHER_KEY` ，值为项目凭据中的 API Key 值。
+```bash
+export WEATHER_KEY=API Key
 ```
 
 ### 系统运行
