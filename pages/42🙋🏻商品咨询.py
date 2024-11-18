@@ -243,7 +243,7 @@ def flow_graph(requirement):
 
     try:
         response = get_default_client().chat.completions.create(
-            model="glm-4",
+            model="glm-4-flash",
             messages=messages,
             stream=False,
             max_tokens=2048,
@@ -264,7 +264,7 @@ def load_product_documents(id):
 
 def load_chain():
     chain = load_qa_with_sources_chain(
-        llm=OpenAI(api_key="EMPTY", base_url=f'http://{get_config("server_address")}/v1/', model='glm-4'),
+        llm=OpenAI(api_key="EMPTY", base_url=f'http://{get_config("server_address")}/v1/', model='glm-4-flash'),
         chain_type="stuff",
         prompt=STUFF_PROMPT,
     )
@@ -282,7 +282,7 @@ def introduce_product(product_info):
         with st.spinner("处理中，请稍等..."):
             with st.empty():
                 response = get_default_client().chat.completions.create(
-                    model="glm-4",
+                    model="glm-4-flash",
                     messages=messages,
                     stream=True,
                     max_tokens=2048,
@@ -332,7 +332,7 @@ def cache_ask_product(product_info, user_voice_file, user_input_text):
                     messages.append({"role": "user", "content": user_input})
 
                     response = get_default_client().chat.completions.create(
-                        model="glm-4",
+                        model="glm-4-flash",
                         messages=messages,
                         stream=stream,
                         max_tokens=2048,

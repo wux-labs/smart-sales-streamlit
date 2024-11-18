@@ -26,7 +26,7 @@ cuda_size_24gb = 22000 # 24566
 cuda_size_40gb = 40000 # 40950
 main_container_height = 680 # int(os.environ.get("config_main_container_height", "685"))
 
-zhipuai_models = ["glm-4"]
+zhipuai_models = ["glm-4-local"]
 zhipuai_online_models = ["glm-4-flash"]
 internlm_models = ["internlm2.5"]
 internlm_online_models = ["internlm2.5-latest"]
