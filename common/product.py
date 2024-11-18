@@ -41,7 +41,7 @@ def image_chat_answer(localdir, filename):
     files = {
         "image": (filename, open(f"{localdir}/{filename}", 'rb'))
     }
-    response = requests.post(url=f"http://{get_config('server_address')}/vision_language/qwen2vl/marketing_documents", headers=headers, data=data, files=files)
+    response = requests.post(url=f"http://{get_config('server_address')}/vision_language/internvl/marketing_documents", headers=headers, data=data, files=files)
 
     return response.json()
 
